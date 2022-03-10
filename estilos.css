@@ -182,20 +182,23 @@ header nav a.activo{
 
 .peliculas-recomendadas .contenedor-principal .flecha-izquierda {
     left: 0;
+    z-index: 198;
 }
 .peliculas-recomendadas .contenedor-principal .flecha-derecha {
     right: 0;
+    z-index: 198;
 }
 
 .peliculas-recomendadas .contenedor-principal .flecha-izquierda:hover,
 .peliculas-recomendadas .contenedor-principal .flecha-derecha:hover {
-    background: rgba(0,0,0, 0.9);    
+    background: rgba(0,0,0, 0.9);
+    color: rgba(255,255,255, 0.5);
 }
 
 /*-------------- Carousel ---------------*/
 .peliculas-recomendadas .contenedor-carousel {
     width: 100%;
-    padding: 20px 0;
+    padding: 20px 50px;
     overflow: hidden;
     scroll-behavior: smooth;
 }
@@ -209,6 +212,7 @@ header nav a.activo{
     min-width: 20%;
     transition: .3s ease all;
     box-shadow: 5px 5px 10px rgba(0,0,0, .3);
+    z-index: 199;
 }
 
 .peliculas-recomendadas .contenedor-carousel .carousel .pelicula:hover {
@@ -250,6 +254,9 @@ header nav a.activo{
         max-width: 100%;
     }
 
+    .peliculas-recomendadas .contenedor-carousel {
+        padding: 20px 0px;
+    }
     /*----------- Responsive Carousel(Grid) -----------*/
 
     .peliculas-recomendadas .contenedor-carousel {
@@ -276,6 +283,7 @@ header nav a.activo{
 
     header {
         height: 125px;
+        padding-top: 20px;
     }
     .contenedor-del-nav {
         display: block;
@@ -287,9 +295,15 @@ header nav a.activo{
         gap: 5px;
         //flex-direction: column;        
     }
+
+    .contenedor-del-header header .contenedor h2 {
+        margin-bottom: 0px;
+        font-size: 35px;
+    }
+
     .contenedor-del-nav nav a {
-        margin-bottom: 20px;
-        font-size: 10px;
+        //margin-bottom: 20px;
+        //font-size: 30px;
     }
     .pelicula-principal {
         font-size: 10px;

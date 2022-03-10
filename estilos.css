@@ -258,7 +258,7 @@ header nav a.activo{
 
     .peliculas-recomendadas .contenedor-carousel .carousel {
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(2,1fr);
         gap: 20px;
     }
 
@@ -271,19 +271,21 @@ header nav a.activo{
 
 @media screen and (max-width: 500px) {
     .contenedor-del-header {
-        height: 200px;   
+        height: 120px;   
     }
 
     header {
-        height: 270px;
+        height: 125px;
     }
     .contenedor-del-nav {
         display: block;
         align-content: center;
     }
     .contenedor-del-nav nav {
-        display: flex;
-        flex-direction: column;        
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        gap: 5px;
+        //flex-direction: column;        
     }
     .contenedor-del-nav nav a {
         margin-bottom: 20px;

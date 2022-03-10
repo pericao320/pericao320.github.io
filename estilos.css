@@ -18,7 +18,7 @@ body {
 .contenedor {
     width: 90%;
     margin: auto;
-    //background-color: blue;
+    /*background-color: blue;*/
 }
 
 .contenedor-del-header {
@@ -42,7 +42,7 @@ header .contenedor{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    //background-color: red;
+    /*background-color: red;*/
 }
 
 header .logo {
@@ -55,8 +55,8 @@ header .logo {
 }
 
 header .logo:hover {
-    //color: #fff;
-    //color: #fff400;
+    /*color: #fff;*/
+    /*color: #fff400;*/
     text-shadow: 0px 0px 10px rgba(255,255,255,0.5);
 }
 
@@ -293,7 +293,7 @@ header nav a.activo{
         display: grid;
         grid-template-columns: repeat(5,1fr);
         gap: 5px;
-        //flex-direction: column;        
+        /*flex-direction: column;*/        
     }
 
     .contenedor-del-header header .contenedor h2 {
@@ -302,8 +302,8 @@ header nav a.activo{
     }
 
     .contenedor-del-nav nav a {
-        //margin-bottom: 20px;
-        //font-size: 30px;
+        /*/margin-bottom: 20px;*/
+        /*font-size: 30px;*/
     }
     .pelicula-principal {
         font-size: 10px;

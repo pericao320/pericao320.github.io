@@ -14,7 +14,7 @@
 .contenedor-dela-ventana-del-reproductor .contenedor-header-del-titulo {
     width: 100%;
     margin-top: 20px;
-    padding: 0px 20px;
+    padding: 0px 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -30,12 +30,61 @@
     font-size: 20px;
 }
 
-.contenedor-dela-ventana-del-reproductor .contenedor-del-reproductor video {
+.contenedor-dela-ventana-del-reproductor .contenedor-del-reproductor iframe {
     height: 500px;
+    width: 890px;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     margin: auto;
+}
+
+/*------- MEDIA QUERIES ---------*/
+
+@media screen and (max-width: 950px) {
+    .contenedor-dela-ventana-del-reproductor {
+        width: 500px;
+    }
+    .contenedor-dela-ventana-del-reproductor .contenedor-del-reproductor {
+        height: 280.89px;   
+    }
+    .contenedor-dela-ventana-del-reproductor .contenedor-header-del-titulo {
+        padding: 0px 5px;
+    }
+    .contenedor-dela-ventana-del-reproductor .contenedor-header-del-titulo .contenedor-dela-serie h3 {
+        font-size: 17px;
+    }
+    .contenedor-dela-ventana-del-reproductor .contenedor-header-del-titulo .contenedor-del-titulo h3 {
+        font-size: 13.82px;
+    }
+    .contenedor-dela-ventana-del-reproductor .contenedor-del-reproductor iframe {
+        height: 280.89px;
+        width: 500px;
+        
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .contenedor-dela-ventana-del-reproductor {
+        width: 300px;
+    }
+    .contenedor-dela-ventana-del-reproductor .contenedor-del-reproductor {
+        height: 168.53px;   
+    }
+    .contenedor-dela-ventana-del-reproductor .contenedor-header-del-titulo {
+        padding: 0px 5px;
+    }
+    .contenedor-dela-ventana-del-reproductor .contenedor-header-del-titulo .contenedor-dela-serie h3 {
+        font-size: 10.5px;
+    }
+    .contenedor-dela-ventana-del-reproductor .contenedor-header-del-titulo .contenedor-del-titulo h3 {
+        font-size: 8.5px;
+    }
+    .contenedor-dela-ventana-del-reproductor .contenedor-del-reproductor iframe {
+        height: 168.53px;
+        width: 300px;
+        
+    }
 }

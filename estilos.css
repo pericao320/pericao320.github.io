@@ -297,8 +297,9 @@ header nav a.activo{
     .contenedor-del-nav nav {
         display: grid;
         grid-template-columns: repeat(5,1fr);
-        gap: 5px;
-        /*flex-direction: column;*/        
+        gap: 0px;
+        /*flex-direction: column;*/
+        margin-top: 10px;
     }
 
     .contenedor-del-header header .contenedor h2 {
@@ -307,8 +308,8 @@ header nav a.activo{
     }
 
     .contenedor-del-nav nav a {
-        /*/margin-bottom: 20px;*/
-        /*font-size: 30px;*/
+        /*margin-bottom: 20px;*/
+        font-size: 12.5px;
     }
     .pelicula-principal {
         font-size: 10px;

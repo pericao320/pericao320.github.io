@@ -1,0 +1,41 @@
+.contenedor-dela-ventana-del-reproductor {
+    margin: 25px auto;
+    width: 890px;
+}
+
+.contenedor-dela-ventana-del-reproductor .contenedor-del-reproductor {
+    margin-top: 20px;
+    height: 500px;
+    width: 100%;
+    position: relative;
+    z-index: 100;
+}
+
+.contenedor-dela-ventana-del-reproductor .contenedor-header-del-titulo {
+    width: 100%;
+    margin-top: 20px;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contenedor-dela-ventana-del-reproductor .contenedor-header-del-titulo .contenedor-dela-serie h3 {    
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.contenedor-dela-ventana-del-reproductor .contenedor-header-del-titulo .contenedor-del-titulo h3 {    
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.contenedor-dela-ventana-del-reproductor .contenedor-del-reproductor video {
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}

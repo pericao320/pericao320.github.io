@@ -1,0 +1,16 @@
+.contenedor-dela-ventana-del-reproductor div {
+    margin-top: 10px;
+    height: 590px;
+    width: 100%;
+    position: relative;
+}
+
+.contenedor-dela-ventana-del-reproductor div video {
+    height: 590px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}

@@ -1,5 +1,5 @@
 :root {
-    --rojo: #ffdb00;
+    --rojo: #ffbb00;
     --fondo: #141414;
 }
 
@@ -26,8 +26,6 @@ body {
     background-color: red;
     width: 100%;
     height: 112.8px;
-    box-shadow: 0px 2px 10px rgba(0,0,0,1);
-
 }
 
 header{
@@ -66,15 +64,16 @@ a {
 }
 
 header nav a {
-    color: #AAA;
+    color: #ffbb00;
     text-decoration: none;
     margin-right: 20px;
 }
 
 header nav a:hover,
-header nav a.activo{
-    color: #FFF;
-    /*font-weight: 700;*/
+header nav a.activo {
+    /*color: #ffbb00;*/
+    font-weight: 700;
+    /*text-decoration: underline;*/
 }
 
 /*--------------PELICULA PRINCIPAL-------------*/
@@ -182,7 +181,7 @@ header nav a.activo{
     color: #fff;
     cursor: pointer;
     z-index: 500;
-    transition: .2s ease all;
+    transition: .2s ease all;   
 }
 
 .peliculas-recomendadas .contenedor-principal .flecha-izquierda {
@@ -230,8 +229,28 @@ header nav a.activo{
 .peliculas-recomendadas .contenedor-carousel .carousel .pelicula img {
     width: 100%;
 }
+/*--------------- POCAS PELIS O MENOS DE 5 PELIS -------------------*/
+@media screen and (max-width: 99999px) {
+    /*----------- Responsive Carousel(Grid) -----------*/
+    .peliculas-recomendadas .contenedor-carousel {
+        padding: 20px 0px;
+    }
+    .peliculas-recomendadas .contenedor-carousel {
+        overflow: visible;
+    }
 
+    /*.peliculas-recomendadas .contenedor-carousel .carousel {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 20px;
+    }*/
 
+    .peliculas-recomendadas .indicadores,
+    .peliculas-recomendadas .flecha-izquierda,
+    .peliculas-recomendadas .flecha-derecha {
+        display: none;
+    }
+}
 /*----------------- Media Queries -------------------*/
 @media screen and (max-width: 900px) {
     .contenedor-del-header {

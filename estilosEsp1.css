@@ -52,7 +52,17 @@
     
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1300px) {
+    .contenedor-dela-ventana-del-reproductor .contenedor-header-del-titulo .contenedor-dela-serie h3 {
+        font-size: 15px;
+    }
+
+    .contenedor-dela-ventana-del-reproductor .contenedor-header-del-titulo .contenedor-del-titulo h3 {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 990px) {
     .contenedor-dela-ventana-del-reproductor {
         margin: 10px 30px 15px 30px;
     }
@@ -63,9 +73,11 @@
         font-size: 8px;
     }
     .contenedor-del-reproductor {
-        margin-top: 180px;
-    }
-    iframe {
-        font-size: 2px;
+        margin-top: 60px;
     }
 }
+@media screen and (max-width: 500px) {
+    .contenedor-del-reproductor {
+        margin-top: 180px;
+    }
+}  

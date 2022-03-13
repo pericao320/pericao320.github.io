@@ -34,7 +34,7 @@ body {
 
 .contenedor-del-header {
     position: initial;
-    background-color: red;
+    background-color: transparent;
     width: 100%;
     height: 112.8px;
 }
@@ -264,24 +264,34 @@ header nav a.activo {
     }
 }
 /*----------------- Media Queries -------------------*/
-@media screen and (max-width: 900px) {
-    .contenedor-del-header {
-        height: 140px;
+@media screen and (max-width: 990px) {
+    /*-------- HEADER -------*/
+    .contenedor-del-header, header {
+        height: 50px;
     }
-
     header {
-        height: 140px;
+        padding: 9px 0px;
+    }
+    header .logo {
+        font-size: 25px;
     }
 
-    header .logo {
+    /*header .logo {
         margin-bottom: 15px;
         font-size: 35px;
     }
     header .contenedor {
         flex-direction: column;
         text-align: center;
+    }*/
+    .contenedor-del-nav nav {
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        gap: 0px;
+        font-size: 10px;
+        text-align: center;
     }
-
+    /*-------------- PELI PRINCIPAL  ----------------------*/
     .pelicula-principal{
         font-size: 14px;
     }
@@ -290,10 +300,11 @@ header nav a.activo {
         max-width: 100%;
     }
 
+    /*----------- Responsive Carousel(Grid) -----------*/
+
     .peliculas-recomendadas .contenedor-carousel {
         padding: 20px 0px;
     }
-    /*----------- Responsive Carousel(Grid) -----------*/
 
     .peliculas-recomendadas .contenedor-carousel {
         overflow: visible;
@@ -320,6 +331,14 @@ header nav a.activo {
     header {
         height: 125px;
         padding-top: 20px;
+    }
+    header .logo {
+        margin-bottom: 15px;
+        font-size: 35px;
+    }
+    header .contenedor {
+        flex-direction: column;
+        text-align: center;
     }
     .contenedor-del-nav {
         display: block;

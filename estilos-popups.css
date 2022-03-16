@@ -62,7 +62,7 @@
     height: 450px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 990px) {
     .popup-avance-edtd iframe {
         width: 320px;
         height: 180px;

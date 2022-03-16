@@ -1,0 +1,63 @@
+.overlay {
+    z-index: 2000;
+    background: rgba(0,0,0,.8);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlay.active {
+    visibility: visible;
+}
+
+.popup-avance-edtd {
+    text-align: center;
+    position: relative;
+    margin-top: 10000px;
+    transition: .5s ease all;
+}
+
+.popup-avance-edtd.active {
+    margin-top: 0px;
+}
+
+.popup-avance-edtd .btn-cerrar-popup {
+    font-size: 16px;
+    line-height: 16px;
+    display: block;
+    position: absolute;
+    right: 0;
+    color: rgba(255,255,255,0.5);
+    transition: .15s ease all;
+}
+
+.popup-avance-edtd .btn-cerrar-popup:hover {
+    color: rgba(255,255,255,1);
+}
+
+.popup-avance-edtd h3 {
+    text-align: left; 
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 900;
+    margin-bottom: 6px;
+}
+
+.popup-avance-edtd h4 {
+    text-align: left; 
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: 100;
+    margin-bottom: 16px;
+}
+
+.popup-avance-edtd iframe {
+    width: 800px;
+    height: 450px;
+}

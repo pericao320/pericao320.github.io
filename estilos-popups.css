@@ -61,3 +61,10 @@
     width: 800px;
     height: 450px;
 }
+
+@media screen and (max-width: 500px) {
+    .popup-avance-edtd iframe {
+        width: 320px;
+        height: 180px;
+    }
+}

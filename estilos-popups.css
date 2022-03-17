@@ -35,6 +35,7 @@
     right: 0;
     color: rgba(255,255,255,0.5);
     transition: .15s ease all;
+    cursor: pointer;
 }
 
 .popup-avance-edtd .btn-cerrar-popup:hover {

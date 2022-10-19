@@ -1,0 +1,121 @@
+{% extends './layoutEncabezado.html' %}
+
+{% block pagina_perfil %}
+
+<div class="MenuLateral">
+{% for v in range(data.numOpcionesNav-1) %}
+{% set c = data.opcionesMenuLat[loop.index] %}
+{% set m = data.linksMenuLat[loop.index] %}
+    <a href="{{ m }}" title="{{ c }}">
+        <div>
+            <img src="/static/sources/imgs/{{ m }}.png" alt="{{ c }}" title="{{ c }}"/>
+            <h3>{{ c }}</h3>
+        </div>
+    </a>				
+{% endfor %}
+</div>
+
+<div class="calendario">
+    <h3>Abril <b>2022</b></h3>
+    <div class="calendario-dias">
+        <div class="dia-semana">Domingo</div>
+        <div class="dia-semana">Lunes</div>
+        <div class="dia-semana">Martes</div>
+        <div class="dia-semana">Miércoles</div>
+        <div class="dia-semana">Jueves</div>
+        <div class="dia-semana">Viernes</div>
+        <div class="dia-semana">Sábado</div>
+        <div>27</div>
+        <div>
+            28
+            <div>
+                <h4>REALIDAD NACIONAL A:</h4>
+                <p>
+                    Línea de tiempo de la historia del Ecuador.
+                </p>
+            </div>
+            <!--<div>
+                <a href="">
+                    <h4>REALIDAD NACIONAL A:</h4>
+                    <p>
+                        Línea de tiempo de la historia del Ecuador
+                    </p>
+                </a>
+            </div>-->
+        </div>
+        <div>29</div>
+        <div>30</div>
+        <div>31</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>
+            5
+            <div>
+                <h4 class="sinEntregar">REALIDAD NACIONAL A:</h4>
+                <p>
+                    Línea de tiempo de la historia del Ecuador.
+                </p>
+            </div>
+        </div>
+        <div>6</div>
+        <div>7</div>
+        <div>
+            8
+            <div>
+                <h4>REALIDAD NACIONAL A:</h4>
+                <p>
+                    Línea de tiempo de la historia del Ecuador.
+                </p>
+            </div>
+            <div>
+                <h4 class="entregado">REALIDAD NACIONAL A:</h4>
+                <p>
+                    Línea de tiempo de la historia del Ecuador.
+                </p>
+            </div>
+        </div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+        <div>16</div>
+        <div>17</div>
+        <div>18</div>
+        <div>19</div>
+        <div>20</div>
+        <div>21</div>
+        <div>22</div>
+        <div>23</div>
+        <div>24</div>
+        <div>25</div>
+        <div>26</div>
+        <div>27</div>
+        <div>28</div>
+        <div>29</div>
+        <div>30</div>
+    </div>
+</div>
+<div class="indicadores">
+    <div class="indicadores-icons-resp">
+        <div class="iconos">
+            <span id="entregado"></span>
+            <span id="sinEntregar"></span>
+            <span id="atrasado"></span>
+        </div>
+        <div class="iconosRespectivos">
+            <p>Entregado</p>
+            <p>Sin entregar</p>
+            <p>Atrasado</p>
+        </div>
+    </div>
+</div>
+<div class="verTareasbutton">
+    <a href="#">Ver Tareas</a>
+</div>
+
+{% endblock %}
